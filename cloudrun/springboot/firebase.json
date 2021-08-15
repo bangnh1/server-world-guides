@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "run": {
+          "serviceId": "gcp-cloudrun-springboot",
+          "region": "asia-northeast1"
+        }
+      }
+    ]
+  }
+}
